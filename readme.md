@@ -1,4 +1,4 @@
-## VersionChangerClient
+## VersionChanger
 
 nik9 is the original creator of this stuff -> https://thunderstore.io/package/nik9/VersionSwapper/
 
