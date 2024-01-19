@@ -2,10 +2,10 @@
 using System;
 using System.Reflection;
 
-[BepInPlugin("theniklev.VersionChangerClient", "VersionChangerClient", "1.2.4.1")]
+[BepInPlugin("theniklev.VersionChangerServer", "VersionChangerServer", "1.2.4.4")]
 public class VersionChanger : BaseUnityPlugin
 {
-    public const string PluginGUID = "theniklev.VersionChangerClient";
+    public const string PluginGUID = "theniklev.VersionChangerServer";
 
     // nik9 is the original creator of this stuff
     // tho their mod didn't work and yielded "NullReferenceException: Object reference not set to an instance of an object" cause like ahaahahha he quite messed up with Logger
@@ -14,9 +14,9 @@ public class VersionChanger : BaseUnityPlugin
     public const string PluginAuthor = "TheNikLev&nik9";
 
     //basically VersionSwapper 2.0
-    public const string PluginName = "VersionChangerClient";
+    public const string PluginName = "VersionChangerServer";
 
-    public const string PluginVersion = "1.2.4.1";
+    public const string PluginVersion = "1.2.4.4";
 
     private void OnEnable()
     {
@@ -36,7 +36,7 @@ public class VersionChanger : BaseUnityPlugin
 
         if (field != null)
         {
-            field.SetValue(null, "1.2.4.1");
+            field.SetValue(null, "1.2.4.4");
         }
 
         // hey! 
